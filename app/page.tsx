@@ -7,10 +7,12 @@ import { Precios } from "@/components/sections/precios";
 import { FAQ } from "@/components/sections/faq";
 import { Integraciones } from "@/components/sections/integraciones";
 import { Contacto } from "@/components/sections/contacto";
+import { ScrollReset } from "@/components/ui/scroll-reset";
 
 export default function Home() {
   return (
     <>
+      <ScrollReset />
       <Nav />
       <main>
         <Hero />
