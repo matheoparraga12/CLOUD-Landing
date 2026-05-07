@@ -187,7 +187,7 @@ function DesktopMarquee() {
 function MobileMarquee() {
   const x            = useMotionValue(0);
   const isPaused     = useRef(false);
-  const resumeTimer  = useRef<ReturnType<typeof setTimeout>>();
+  const resumeTimer  = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Seamless loop: teleport x to stay within (-SINGLE_W, 0]
   useMotionValueEvent(x, "change", (val) => {

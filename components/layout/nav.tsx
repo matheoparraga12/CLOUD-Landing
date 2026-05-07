@@ -39,7 +39,7 @@ export function Nav() {
   return (
     <header
       style={{ backdropFilter: scrolled ? "blur(20px)" : "none" }}
-      className={`fixed inset-x-0 top-0 z-[100] transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[9999] transition-all duration-300 ${
         scrolled ? "bg-[#080808]/80 border-b border-white/[0.06]" : ""
       }`}
     >

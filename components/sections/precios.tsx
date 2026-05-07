@@ -56,7 +56,7 @@ export function Precios() {
   return (
     // Sin px en mobile — el carrusel toma el full width
     // min-h solo en desktop para no empujar el carrusel hacia abajo en mobile
-    <section id="precios" className="py-10 md:py-32 md:px-20 md:min-h-[80vh] flex flex-col justify-center">
+    <section id="precios" className="scroll-mt-24 py-10 md:py-32 md:px-20 md:min-h-[80vh] flex flex-col justify-center">
 
       {/* Título — propio padding en mobile */}
       <div className="px-6 md:px-0">

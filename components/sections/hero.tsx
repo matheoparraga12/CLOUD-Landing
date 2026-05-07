@@ -301,15 +301,15 @@ function MobileChatlet() {
   const current = CHATLET_STEPS[step];
 
   useEffect(() => {
-    // Cada paso dura ~4 seg en pantalla
+    // Cada paso dura 3 seg en pantalla
     const timers = [
       setTimeout(() => setPhase("visible"), 800),
-      setTimeout(() => setStep(1),          4800),
-      setTimeout(() => setStep(2),          9000),
-      setTimeout(() => setStep(3),          13200),
-      // Final: 4 seg visible → fade out hacia arriba
-      setTimeout(() => setPhase("exiting"), 17400),
-      setTimeout(() => setPhase("gone"),    18200),
+      setTimeout(() => setStep(1),          3800),
+      setTimeout(() => setStep(2),          6800),
+      setTimeout(() => setStep(3),          9800),
+      // Paso final visible 3 seg → fade out
+      setTimeout(() => setPhase("exiting"), 12800),
+      setTimeout(() => setPhase("gone"),    13600),
     ];
     return () => timers.forEach(clearTimeout);
   }, []);
@@ -317,7 +317,7 @@ function MobileChatlet() {
   if (phase === "gone") return null;
 
   return (
-    <div className="md:hidden absolute top-[68px] left-0 right-0 flex justify-center z-50 px-5 pointer-events-none">
+    <div className="md:hidden absolute top-20 left-0 right-0 flex justify-center z-50 px-5 pointer-events-none">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={
@@ -331,9 +331,9 @@ function MobileChatlet() {
         }}
         className="w-[85%] max-w-[280px] rounded-2xl overflow-hidden"
         style={{
-          background: "#1c1c1e",
+          background: "#121212",
           border: "1px solid rgba(255,255,255,0.09)",
-          boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.6)",
         }}
       >
         <div className="px-4 py-2.5">

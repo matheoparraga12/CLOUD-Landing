@@ -339,7 +339,7 @@ export function ComoFunciona() {
 
   return (
     <section className="py-24 md:py-32 md:px-20">
-      <div id="como-funciona" aria-hidden="true" />
+      <div id="como-funciona" aria-hidden="true" className="scroll-mt-24" />
 
       {/* Header — propio padding en mobile */}
       <div className="px-6 md:px-0">

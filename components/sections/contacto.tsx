@@ -128,7 +128,7 @@ export function Contacto() {
   };
 
   return (
-    <section id="contacto" className="py-24 md:py-32 px-6 md:px-20 min-h-[80vh] flex flex-col justify-center">
+    <section id="contacto" className="scroll-mt-24 py-24 md:py-32 px-6 md:px-20 min-h-[80vh] flex flex-col justify-center">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 md:gap-20 items-start">
 
